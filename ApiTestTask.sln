@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTestTask", "ApiTestTask\ApiTestTask.csproj", "{29151125-E3ED-4133-AE84-54F27ADA0085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTestTask", "ApiTestTask\ApiTestTask.csproj", "{29151125-E3ED-4133-AE84-54F27ADA0085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTestTask.Core", "ApiTestTask.Core\ApiTestTask.Core.csproj", "{C975D4AC-AC86-4C68-B2B6-74869EF0C806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTestTask.Core", "ApiTestTask.Core\ApiTestTask.Core.csproj", "{C975D4AC-AC86-4C68-B2B6-74869EF0C806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTestTask.Tests", "ApiTestTask.Tests\ApiTestTask.Tests.csproj", "{2C803273-3343-4BC6-8118-9A7E4E549B4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C975D4AC-AC86-4C68-B2B6-74869EF0C806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C975D4AC-AC86-4C68-B2B6-74869EF0C806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C975D4AC-AC86-4C68-B2B6-74869EF0C806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C803273-3343-4BC6-8118-9A7E4E549B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C803273-3343-4BC6-8118-9A7E4E549B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C803273-3343-4BC6-8118-9A7E4E549B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C803273-3343-4BC6-8118-9A7E4E549B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
