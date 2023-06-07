@@ -7,3 +7,4 @@
 ### Difficulties
 
 * Returning BadRequest
+* Add tolerance to test with `TestCaseAttribute`

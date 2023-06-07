@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ApiTestTask.Core.Helpers
+﻿namespace ApiTestTask.Core.Helpers
 {
     public static class MathHelper
     {
