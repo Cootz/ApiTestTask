@@ -28,8 +28,18 @@ namespace ApiTestTask.Controllers
             return Ok(coordinates);
         }
 
+        /// <summary>
+        /// Calculates sum of distances between a given array of coordinates
+        /// </summary>
+        /// <returns>Sum of distances between coordinates</returns>
         [HttpPost]
-        public IActionResult CalculateDistance([FromBody] IEnumerable<Coordinate> coordinates) =>
-            throw new NotImplementedException();
+        public IActionResult CalculateDistance([FromBody] IEnumerable<Coordinate> coordinates)
+        {
+            DistanceCalculator distanceCalculator = new();
+
+            double distanceInMeters = distanceCalculator.Calculate(coordinates);
+
+            return Ok(new Distance(distanceInMeters));
+        }
     }
 }
