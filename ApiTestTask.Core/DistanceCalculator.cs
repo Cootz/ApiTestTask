@@ -36,11 +36,11 @@ namespace ApiTestTask.Core
 
         private double calculateDistance(Coordinate c1, Coordinate c2)
         {
-            (double sinC1, double cosC1) = GetSinCosFor(c1.Longitude.ToRadians());
-            (double sinC2, double cosC2) = GetSinCosFor(c2.Longitude.ToRadians());
+            (double sinC1, double cosC1) = GetSinCosFor(c1.Latitude.ToRadians());
+            (double sinC2, double cosC2) = GetSinCosFor(c2.Latitude.ToRadians());
 
-            double deltaLatitude = c2.Latitude - c1.Latitude;
-            (double sinDelta, double cosDelta) = GetSinCosFor(deltaLatitude);
+            double deltaLongitude = Math.Abs(c1.Longitude.ToRadians() - c2.Longitude.ToRadians());
+            (double sinDelta, double cosDelta) = GetSinCosFor(deltaLongitude);
 
             //See reference formula here - https://wiki.gis-lab.info/images/8/89/Great-cirlcles-09.gif
             double top =
@@ -48,7 +48,8 @@ namespace ApiTestTask.Core
 
             double bottom = sinC1 * sinC2 + cosC1 * cosC2 * cosDelta;
 
-            double distance = Math.Atan2(top, bottom) * EARTH_RADIUS;
+            double angleDifference = Math.Atan2(top, bottom);
+            double distance = angleDifference * EARTH_RADIUS;
             return distance;
         }
     }

@@ -2,7 +2,7 @@
 
 namespace ApiTestTask.Tests.TestData
 {
-    public class MathHelperTestDataSource
+    internal class MathHelperTestDataSource
     {
         public static IEnumerable GetSinCosTestCases
         {

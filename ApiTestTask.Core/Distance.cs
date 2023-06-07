@@ -1,8 +1,13 @@
-﻿using System.Runtime.CompilerServices;
-using ApiTestTask.Core.Converters;
+﻿using ApiTestTask.Core.Converters;
 
 namespace ApiTestTask.Core
 {
+    /// <summary>
+    /// Store distance and convert it to different metric systems
+    /// </summary>
+    /// <remarks>
+    /// Any metric system you set will be converted and stored as <see cref="Meters"/>
+    /// </remarks>
     public class Distance
     {
         private readonly MetersToMilesConverter metersToMilesConverter = new();
