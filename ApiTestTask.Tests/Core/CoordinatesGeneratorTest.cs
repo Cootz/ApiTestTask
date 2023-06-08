@@ -1,6 +1,6 @@
 ﻿using ApiTestTask.Core;
 
-namespace ApiTestTask.Tests
+namespace ApiTestTask.Tests.Core
 {
     public class CoordinatesGeneratorTest
     {
@@ -20,9 +20,9 @@ namespace ApiTestTask.Tests
                 foreach (Coordinate coordinate in coordinates)
                 {
                     Assert.That(coordinate.Longitude,
-                        Is.InRange(CoordinatesGenerator.MIN_LONGITUDE, CoordinatesGenerator.MAX_LONGITUDE));
+                        Is.InRange(CoordinateValidator.MIN_LONGITUDE, CoordinateValidator.MAX_LONGITUDE));
                     Assert.That(coordinate.Latitude,
-                        Is.InRange(CoordinatesGenerator.MIN_LATITUDE, CoordinatesGenerator.MAX_LATITUDE));
+                        Is.InRange(CoordinateValidator.MIN_LATITUDE, CoordinateValidator.MAX_LATITUDE));
                 }
             });
         }

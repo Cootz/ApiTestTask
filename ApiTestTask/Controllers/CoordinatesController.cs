@@ -37,7 +37,16 @@ namespace ApiTestTask.Controllers
         {
             DistanceCalculator distanceCalculator = new();
 
-            double distanceInMeters = distanceCalculator.Calculate(coordinates);
+            double distanceInMeters = 0;
+
+            try
+            {
+                distanceInMeters = distanceCalculator.Calculate(coordinates);
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                return BadRequest(e);
+            }
 
             return Ok(new Distance(distanceInMeters));
         }

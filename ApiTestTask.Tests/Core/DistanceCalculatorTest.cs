@@ -1,7 +1,7 @@
 ﻿using ApiTestTask.Core;
-using ApiTestTask.Tests.TestData;
+using ApiTestTask.Tests.Core.TestData;
 
-namespace ApiTestTask.Tests
+namespace ApiTestTask.Tests.Core
 {
     [TestFixture]
     public class DistanceCalculatorTest

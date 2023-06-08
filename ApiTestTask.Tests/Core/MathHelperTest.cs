@@ -1,7 +1,7 @@
 ﻿using ApiTestTask.Tests.TestData;
 using static ApiTestTask.Core.Helpers.MathHelper;
 
-namespace ApiTestTask.Tests
+namespace ApiTestTask.Tests.Core
 {
     [TestFixture]
     public class MathHelperTest

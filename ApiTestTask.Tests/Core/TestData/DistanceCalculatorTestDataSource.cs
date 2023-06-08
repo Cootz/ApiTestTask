@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using ApiTestTask.Core;
 
-namespace ApiTestTask.Tests.TestData
+namespace ApiTestTask.Tests.Core.TestData
 {
     internal class DistanceCalculatorTestDataSource
     {

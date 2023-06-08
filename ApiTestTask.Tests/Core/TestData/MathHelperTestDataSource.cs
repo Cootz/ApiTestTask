@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace ApiTestTask.Tests.TestData
+namespace ApiTestTask.Tests.Core.TestData
 {
     internal class MathHelperTestDataSource
     {

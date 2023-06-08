@@ -26,6 +26,11 @@ namespace ApiTestTask.Core
             if (coordinatesArray.Length < 2)
                 return distanceSum;
 
+            if (coordinatesArray.Any(coordinate => !coordinate.Validate()))
+            {
+                throw new ArgumentException("Given coordinate does not exist");
+            }
+
             for (int i = 1; i < coordinatesArray.Length; i++)
             {
                 distanceSum += calculateDistance(coordinatesArray[i - 1], coordinatesArray[i]);
