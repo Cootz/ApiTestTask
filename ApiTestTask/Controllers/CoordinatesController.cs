@@ -45,7 +45,7 @@ namespace ApiTestTask.Controllers
             }
             catch (ArgumentOutOfRangeException e)
             {
-                return BadRequest(e);
+                return BadRequest(e.Message);
             }
 
             return Ok(new Distance(distanceInMeters));

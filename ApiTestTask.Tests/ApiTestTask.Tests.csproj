@@ -24,8 +24,4 @@
     <ProjectReference Include="..\ApiTestTask.Core\ApiTestTask.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="API\" />
-  </ItemGroup>
-
 </Project>

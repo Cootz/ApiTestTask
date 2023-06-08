@@ -1,4 +1,4 @@
-﻿using ApiTestTask.Tests.TestData;
+﻿using ApiTestTask.Tests.Core.TestData;
 using static ApiTestTask.Core.Helpers.MathHelper;
 
 namespace ApiTestTask.Tests.Core

@@ -28,7 +28,7 @@ namespace ApiTestTask.Core
 
             if (coordinatesArray.Any(coordinate => !coordinate.Validate()))
             {
-                throw new ArgumentException("Given coordinate does not exist");
+                throw new ArgumentOutOfRangeException(nameof(coordinates), "Given coordinate does not exist");
             }
 
             for (int i = 1; i < coordinatesArray.Length; i++)
