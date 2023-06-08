@@ -29,17 +29,19 @@ namespace ApiTestTask.Tests.API
             Assert.That(result, Is.TypeOf<BadRequestResult>());
         }
 
+        //We don't need to test every possibility here as it's already tested in DistanceCalculatorTest
         [Test]
         public void PostReturnsDistance()
         {
             Coordinate[] coordinates =
             {
-                new(10, 20)
+                new(10, 20),
+                new(20, 30)
             };
 
             Distance? distance = (Distance?)(controller.CalculateDistance(coordinates) as ObjectResult)?.Value;
 
-            Assert.That(distance?.Meters, Is.EqualTo(0));
+            Assert.That(distance?.Meters, Is.GreaterThan(0));
         }
 
         [Test]
