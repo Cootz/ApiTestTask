@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiTestTask.Core\ApiTestTask.Core.csproj" />
+    <ProjectReference Include="..\ApiTestTask\ApiTestTask.csproj" />
   </ItemGroup>
 
 </Project>

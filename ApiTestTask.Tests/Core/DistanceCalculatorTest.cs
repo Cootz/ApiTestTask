@@ -13,5 +13,17 @@ namespace ApiTestTask.Tests.Core
             nameof(DistanceCalculatorTestDataSource.CalculateDistanceTestCases))]
         public double CalculateDistanceTest(IEnumerable<Coordinate> coordinates) =>
             distanceCalculator.Calculate(coordinates);
+
+        [Test]
+        public void CalculateDistanceThrowsArgumentOutOfRangeExceptionTest()
+        {
+            Coordinate[] coordinates =
+            {
+                new(100, 200),
+                new(10, 20),
+            };
+
+            Assert.Throws<ArgumentOutOfRangeException>(() => distanceCalculator.Calculate(coordinates));
+        }
     }
 }
